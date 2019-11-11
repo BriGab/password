@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    Margin: 10px;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+.myJumbo {
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid lightgray;
+    position: relative;
+}
+.header2{
+    text-align: left;
+    margin-top:0px;
+    margin-left: 10px;
+    font-size: 28px;
+    color: black;
+    font-weight: bolder;
+}
+.password {
+    height: 150px;
+    border: 2px dashed lightgray;
+    width: 80%;
+    position: aboslute;
+    margin: 0 auto;
+}
+.myRedButton {
+    background-color: #af0808;
+    border: none;
+    margin: 10px;
+    border-radius: 25px;
+}
+.myGreyButton {
+    background-color: lightgrey;
+    border: none;
+    margin: 10px;
+    border-radius: 25px;
+}
