@@ -1,7 +1,7 @@
 // This button initiates making the password which starts the prompt to get necessary user information
 var myRedButton = document.querySelector(".myRedButton");
 myRedButton.addEventListener("click", makePassword);
-
+var myGreyButton = document.getElementsByClassName("myGreyButton");
 
 var specialArr= ["!", "@", "&","%", "#","(", "="];
 var numberArr= ["0", "1", "2", "3", "4", "5", "6","7","8","9"];
@@ -13,7 +13,6 @@ var lowerArr= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
 function makePassword () {
     var options = GetRandomItem();
     var newPassword = buildPassword(options);
-    console.log(newPassword);
 
 }
 
@@ -87,15 +86,22 @@ function buildPassword(options){
         finalAnswer.push(randCharacter);
     }
     var output = document.querySelector("#output");
-    var password = sessionStorage.getItem("finalAnswer");
+    var list = document.createElement("textarea");
+    var copyAnswer = finalAnswer.join('');
+    
+  
+    
 
-    sessionStorage.setItem("finalAnswer", finalAnswer.join(``));
-    output.textContent = password;
+    output.textContent = copyAnswer;
+   
     
     return alert ("Here is your new password:   " + finalAnswer.join(``));
 
-}
 
+    
+    
+    
+}
 
 
 
