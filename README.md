@@ -1,5 +1,7 @@
 # Password Generator <h1>
 
+[Git Hub Pages Link](https://brigab.github.io/password-index.html/)
+
 This application was created for the purpose of generating secure passwords depending
 on a users preference in length and character type. Users are asked five questions via alerts: 
 
