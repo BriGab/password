@@ -12,12 +12,12 @@ on a users preference in length and character type. Users are asked five questio
 - If they would like it to include lower case letters (confirm)
 
 
-Given the length entered by a user and whether or not they want to include each of the character types a password is generated. 
+Given the length entered by a user and whether or not they want to include each of the character types a password is generated. If the user does not select one of the options an alert will prompt them to select at least one and go through the options again. 
 
-Using math random the computer is randomly picking characters from each array and then continually doing so until length has been met. Once length has been met the final password is created which will show as an alert to the user. 
+Using math random the computer is randomly picking characters from each array and then continually doing so until length has been met. Once length has been met the final password is created which will up in the text box above the Generate Password button. 
 
-The password is also stored in session storage and I am continuing to work on getting that final password to also show up in the output box. I would like to get the text to appear in this box before copying to the clipboard since it would make much more sense for a user to click that button if text was there. 
+Once the password is in the text area the user can then click the Copy to Clipboard button and paste the password wherever they'd like. 
 
-This assignment definitley helped with my understanding of functions and how to start thinking logically about each step and the flow of information. 
+ ![Alt text](PasswordGeneratorReadMe.PNG?raw=true "Password Generator")
 
 

@@ -13,30 +13,19 @@
     <h1>Password Generator</h1>
 
     <section class= "wrapper">
-        <!-- <div class="myJumbo jumbotron jumbotron-fluid">
-            <div class="container">
-                <h2 class="header2 display-4">Generate a Password</h2>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-            </div>
-        </div>
-        <div class= "row">
-            <div class= "col-sm col-md col-lg">
-            <h2>Generate a Password</h2>
-            </div>
-        </div> -->
         <div class="myJumbo jumbotron">
                 <h2 class="header2 display-4">Generate a Password</h2>
                 <hr class="my-4">
                 <div class="password lead">
                     <form placeholder="Your Password">
-                        <output> <p id="output"></p>
+                        <output> <textarea id="output"></textarea>
                         </output>
                     </form>
                 </div>
                 <hr class="my-4">
                 <div class="lead">
                      <button type="button" class="myRedButton btn btn-primary btn-lg">Generate Password</button>
-                     <button type="button" class="myGreyButton btn btn-secondary btn-lg">Copy to Clipboard</button>
+                     <button type="button" class="myGreyButton btn btn-secondary btn-lg" onclick="myFunction()">Copy to Clipboard</button>
                 </div>   
                 
         </div>
@@ -44,5 +33,6 @@
     </section>
     
     <script src="script.js"></script>
+    <script src="copyscript.js"></script>
 </body>
 </html>

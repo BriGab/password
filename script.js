@@ -9,10 +9,12 @@ var upperArr= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
 var lowerArr= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 
-//This function sets other functions to to run in order to get a password
+
+//This function sets other functions to run in order to get a password
 function makePassword () {
     var options = GetRandomItem();
     var newPassword = buildPassword(options);
+
 
 }
 
@@ -29,6 +31,14 @@ function GetRandomItem() {
     var numbers = confirm ("Would you like numbers in your password?");
     var uppers = confirm ("Would you like Upper Case in your password?");
     var lowers = confirm ("Would you like lower case in you password?");
+    
+    if (specials === false && numbers === false && uppers === false && lowers === false) {
+      alert("You must select at least one character, please press ok for one of the options")
+      var specials = confirm ("Would you like special characters in your password?");
+      var numbers = confirm ("Would you like numbers in your password?");
+      var uppers = confirm ("Would you like Upper Case in your password?");
+      var lowers = confirm ("Would you like lower case in you password?");
+    }
 
     var choices = {
         length: length,
@@ -48,12 +58,12 @@ function GetRandomArrItem(arr) {
     return arr[Math.floor(Math.random() * arr.length)]
 }
 
+var possibleChoices = [];
+var finalAnswer = [];
     
   
 //This function builds the actual password based on which options the user selected
 function buildPassword(options){
-    var possibleChoices = [];
-    var finalAnswer = [];
   
 
     if (options.specials === true){
@@ -86,26 +96,9 @@ function buildPassword(options){
         finalAnswer.push(randCharacter);
     }
     var output = document.querySelector("#output");
-    var list = document.createElement("textarea");
     var copyAnswer = finalAnswer.join('');
-    
-  
-    
 
     output.textContent = copyAnswer;
-   
-    
-    return alert ("Here is your new password:   " + finalAnswer.join(``));
 
-
-    
-    
-    
 }
-
-
-
-
-
-
 
